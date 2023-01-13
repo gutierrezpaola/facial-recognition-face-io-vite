@@ -4,28 +4,12 @@
   box-sizing: border-box;
 }
 
-
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Righteous&display=swap');
-
-
-/* @import url(animate.min.css);
-@import url(normalize.css);
-@import url(meanmenu.css);
-@import url(slick.css);
-@import url(jquery-ui.css);
-@import url(nice-select.css); */
-
-body {
-     color: #666666;
-     background-color: #2b3256;
-     font-size: 14px;
-     font-family: 'Lato', sans-serif;
-     line-height: 1.80857;
-     font-weight: normal;
+.main-layout {
+     background-color: #2b3256;;
+     width: 100%;
+     height: 100vh;
+     position: fixed;
+     z-index: -999 !important;
 }
 
 a {
@@ -37,23 +21,6 @@ a {
      -ms-transition: all .3s ease-in-out;
      -o-transition: all .3s ease-in-out;
      transition: all .3s ease-in-out;
-}
-
-h1 {
-     font-size: 24px;
-     font-family: 'Righteous', cursive;
-}
-
-*,
-*::after,
-*::before {
-     -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-     box-sizing: border-box;
-}
-
-button:focus {
-     outline: none;
 }
 
 p {
@@ -100,6 +67,8 @@ p {
 
 .banner_main {
      padding: 190px 0 100px 0;
+     width: 100%;
+     height: 100%;
 }
 
 .text-bg {
@@ -107,9 +76,10 @@ p {
 }
 
 .text-bg h1 {
-     font-size: 90px;
+     font-size: 80px;
      line-height: 100px;
      font-weight: bolder;
+     font-family: 'Righteous', cursive;
 }
 
 .text-bg p {
@@ -121,7 +91,7 @@ p {
 
 .text-bg a {
      font-size: 17px;
-     background-color: #fff;
+     background-color: #02fee5;
      color: #000;
      padding: 13px 0px;
      width: 100%;
@@ -146,6 +116,4 @@ p {
      align-items: center;
      flex-wrap: wrap;
 }
-
-
 
