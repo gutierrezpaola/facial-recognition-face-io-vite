@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect } from "react";
 import "./App.css";
 
+import logoImg from  '../src/assets/img/logo.png';
+
 function App() {
   let faceio;
   useEffect(() => {
@@ -27,19 +29,19 @@ function App() {
     }
   };
 
-  const handleLogIn = async () => {
-    try {
-      let response = await faceio.authenticate({
-        locale: "auto",
-      });
+  // const handleLogIn = async () => {
+  //   try {
+  //     let response = await faceio.authenticate({
+  //       locale: "auto",
+  //     });
 
-      console.log(` Unique Facial ID: ${response.facialId}
-    PayLoad: ${response.payload}
-    `);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  //     console.log(` Unique Facial ID: ${response.facialId}
+  //   PayLoad: ${response.payload}
+  //   `);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
   
   return (
     <div className="main-layout">
@@ -52,7 +54,8 @@ function App() {
                       <div className="full">
                         <div className="center-desk">
                             <div className="logo">
-                              <a href="index.html"><img src="../src/assets/img/logo.png" alt="#" /></a>
+                            <img src={logoImg} alt="logo" />
+                              {/* <a href="index.html"><img src="../src/assets/img/logo.png" alt="#" /></a> */}
                             </div>
                         </div>
                       </div>
