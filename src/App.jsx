@@ -20,7 +20,7 @@ function App() {
         },
       });
 
-      console.log(` Unique Facial ID: ${response.facialId}
+    alert(` Unique Facial ID: ${response.facialId}
     Enrollment Date: ${response.timestamp}
     Gender: ${response.details.gender}
     Age Approximation: ${response.details.age}`);
