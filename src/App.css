@@ -44,7 +44,7 @@ p {
 }
 
 .head_top {
-     background: url(../images/bottom.png);
+     background: url(../src/assets/img/bottom.png);
      background-size: 100% 100%;
      background-repeat: no-repeat;
      background-position: center;

@@ -52,7 +52,7 @@ function App() {
                       <div className="full">
                         <div className="center-desk">
                             <div className="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                              <a href="index.html"><img src="../src/assets/img/logo.png" alt="#" /></a>
                             </div>
                         </div>
                       </div>
@@ -83,9 +83,7 @@ function App() {
                   <div className=" col-xl-8 col-lg-8 col-md-8 col-12-9">
                       <div className="text-bg">
                         <h1><span className="white1">Facial Recognition</span></h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat a aliquam, hic ipsum id
-                            totam facere. Rem explicabo unde voluptas dolorem! A repellendus quae quis maxime iusto ab
-                            neque enim.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat a aliquam, hic ipsum id totam facere. Rem explicabo unde voluptas dolorem! A repellendus quae quis maxime iusto ab neque enim.</p>
                         <a onClick={handleSignIn} href="#">Get Started</a>
                       </div>
                   </div>
