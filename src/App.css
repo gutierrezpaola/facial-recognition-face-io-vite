@@ -44,7 +44,7 @@ p {
 }
 
 .head_top {
-     background: url(../src/assets/img/bottom.png);
+     background-image: url(../src/assets/img/bottom.png);
      background-size: 100% 100%;
      background-repeat: no-repeat;
      background-position: center;
@@ -120,16 +120,17 @@ p {
      flex-wrap: wrap;
 }
 
-@media screen and (max-width: 545px) {
+@media screen and (max-width: 540px) {
      .banner_main {
-          /* padding: 0px 0 0px 0; */
+          padding: 0 0 0 0;
           /* background-color: red; */
           display: flex; 
+          flex-direction: column;
           justify-content: center;
           align-items: center;
      }
      .text-bg h1 {
-          font-size: 70px;
+          font-size: 40px;
           /* line-height: 100px; */
      }
      
@@ -137,7 +138,8 @@ p {
           color: #fff;
           font-size: 16px;
           /* line-height: 28px; */
-          padding: 40px 0;
+          /* padding: 40px 0; */
      }
+     
 }
 
