@@ -45,10 +45,10 @@ function App() {
   
   return (
     <>
-    <div className="main-container"></div>
+    <div className="main-container">
     <header>
       <section>
-        <img src={logoImg} alt="" />
+        <img src={logoImg} alt="logo" />
       </section>
         <ul>
           <li>HOME</li>
@@ -71,6 +71,7 @@ function App() {
               </div>
             </div>
     </main>
+    </div>
     </>
   )
 }

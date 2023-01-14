@@ -49,10 +49,11 @@ main {
     width: 100%;
     height: 88vh;
     background-color: transparent;
-     display: grid; 
+    display: grid; 
     align-items: center; 
     justify-content: center;
 }
+
 h1 {
     font-size: 86px;
     line-height: 100px;
@@ -91,10 +92,8 @@ button:hover {
 
 /* @media screen and (max-width: 500px) {
     p {
-     background-color: red;
-
+    background-color: red;
     }
-  
 }   */
 
 
