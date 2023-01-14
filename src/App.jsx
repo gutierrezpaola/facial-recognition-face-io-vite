@@ -85,9 +85,9 @@ function App() {
               {isLoggedIn && (
               <div class="alert alert-info" role="alert">
                 <span>ID: {userInfo.facialId}</span>
-                <span>TimeStamp:{userInfo.facialId}</span>
-                <span>Gender: {userInfo.facialId}</span>
-                <span>Age: {userInfo.facialId}</span>
+                <span>TimeStamp:{userInfo.timestamp}</span>
+                <span>Gender: {userInfo.gender}</span>
+                <span>Age: {userInfo.age}</span>
               </div>
             )}
             </div>
