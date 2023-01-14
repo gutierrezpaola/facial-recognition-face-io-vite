@@ -1,10 +1,13 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
 import logoImg from  '../src/assets/img/logo.png';
 
 function App() {
+  const [userInfo, setUserInfo] = useState({});
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   let faceio;
   useEffect(() => {
     faceio = new faceIO("fioa737a");
@@ -20,10 +23,19 @@ function App() {
         },
       });
 
-    alert(` Unique Facial ID: ${response.facialId}
-    Enrollment Date: ${response.timestamp}
-    Gender: ${response.details.gender}
-    Age Approximation: ${response.details.age}`);
+      setUserInfo({
+        facialId: response.facialId,
+        timestamp: response.timestamp,
+        gender: response.gender,
+        age: response.details.age
+      });
+
+      setIsLoggedIn(true);
+
+    // alert(` Unique Facial ID: ${response.facialId}
+    // Enrollment Date: ${response.timestamp}
+    // Gender: ${response.details.gender}
+    // Age Approximation: ${response.details.age}`);
     } catch (error) {
       console.log(error);
     }
@@ -69,7 +81,17 @@ function App() {
                     </div>
                   </div>
               </div>
+
+              {isLoggedIn && (
+              <div class="alert alert-info" role="alert">
+                <span>ID: {userInfo.facialId}</span>
+                <span>TimeStamp:{userInfo.facialId}</span>
+                <span>Gender: {userInfo.facialId}</span>
+                <span>Age: {userInfo.facialId}</span>
+              </div>
+            )}
             </div>
+
     </main>
     </div>
     </>

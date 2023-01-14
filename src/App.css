@@ -55,7 +55,7 @@ main {
 }
 
 h1 {
-    font-size: 86px;
+    font-size: 80px;
     line-height: 100px;
     font-weight: bolder;
     font-family: 'Righteous', cursive;
@@ -88,6 +88,7 @@ button:hover {
     color: #000;
     transition: ease-in all 0.5s;
     border-radius: 26px;
+    outline: none;
 } 
 
 /* @media screen and (max-width: 500px) {
@@ -96,4 +97,12 @@ button:hover {
     }
 }   */
 
-
+.alert-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: baseline;
+    color: #000;
+    font-size: 16px;
+}
